@@ -1,0 +1,9 @@
+(tests
+ (names io_layer_test)
+ (package io_layer)
+ (action (run %{test} -v))
+ (libraries alcotest io_layer))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
